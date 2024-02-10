@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.instabox {
+    width: 100%;
+    border: 2px solid black;
+    max-width: 350px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+input[type="text"], input[type="password"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c8fcd;
+}
+
+.forgot-password, .signup {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a, .signup a{
+    color: #3897f0;
+    text-decoration: none;
+}
+.forgot-password a:hover, .signup a:hover{
+    color: #070912;
+    text-decoration: none;
+}
+.signup a {
+    font-weight: bold;
+}
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
+.pehladabba {
+    /* border: 2px solid black; */
+    margin-top: 0px;
+    height: auto;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    font-family:'cursive';
+    margin-bottom: 20px;
+}
+.jum{
+    font-family: cursive;
+    display: grid;
+    text-align:center;
+}

